@@ -155,6 +155,7 @@
 
 }
 -(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+    
     [str appendString:string];
 }
 
@@ -191,6 +192,8 @@
         [dic setObject:[NSString stringWithString:str] forKey:elementName];
     }
     else if([elementName isEqualToString:@"select1"]){
+        str = [CommFunc genHtmlStr:str];
+         NSLog(@"----------------mItem.sSelect1 = %@", str);
         [dic setObject:[NSString stringWithString:str] forKey:elementName];
     }
     else if([elementName isEqualToString:@"select2"]){
@@ -268,8 +271,16 @@
         Exam *tempNews=[[Exam alloc]init];
         tempNews.sTitle=[element objectForKey:@"title"];
         tempNews.sCreateDate=[element objectForKey:@"createdate"];
-
+        tempNews.sSelect1=[element objectForKey:@"select1"];
+        tempNews.sHint1=[element objectForKey:@"hint1"];
+        
+        tempNews.sResult=[element objectForKey:@"result"];
+        tempNews.sSelect1=[element objectForKey:@"select1"];
         NSLog(@"%@========",tempNews.sTitle);
+        NSLog(@"%@=------sSelect1-======",tempNews.sSelect1);
+        NSLog(@"%@=------sHint1--======",tempNews.sHint1);
+        NSLog(@"%@=------sResult--======",tempNews.sResult);
+       
         [tempArray addObject:tempNews];
     }
     [array removeAllObjects];

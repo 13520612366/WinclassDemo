@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314C80F1169BC94B00D27A99 /* CommFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 314C80F0169BC94B00D27A99 /* CommFunc.m */; };
 		3151906D1699A847006BADD4 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3151906C1699A847006BADD4 /* MoreViewController.m */; };
 		315190751699B1C8006BADD4 /* DictioneryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315190741699B1C8006BADD4 /* DictioneryViewController.m */; };
 		315190871699BA8A006BADD4 /* ExamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315190851699BA8A006BADD4 /* ExamViewController.m */; };
@@ -333,6 +334,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		314C80EF169BC94B00D27A99 /* CommFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommFunc.h; sourceTree = "<group>"; };
+		314C80F0169BC94B00D27A99 /* CommFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommFunc.m; sourceTree = "<group>"; };
 		3151906B1699A847006BADD4 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		3151906C1699A847006BADD4 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		315190731699B1C8006BADD4 /* DictioneryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictioneryViewController.h; sourceTree = "<group>"; };
@@ -684,6 +687,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		314C80E9169BC8DE00D27A99 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				314C80EF169BC94B00D27A99 /* CommFunc.h */,
+				314C80F0169BC94B00D27A99 /* CommFunc.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
 		3151906F1699B15C006BADD4 /* smart */ = {
 			isa = PBXGroup;
 			children = (
@@ -758,6 +770,7 @@
 		316B38A316996808006FE3AC /* WinclassDemo */ = {
 			isa = PBXGroup;
 			children = (
+				314C80E9169BC8DE00D27A99 /* common */,
 				315190721699B18C006BADD4 /* more */,
 				315190711699B179006BADD4 /* dictionery */,
 				315190701699B16A006BADD4 /* listen */,
@@ -1662,6 +1675,7 @@
 				31CFB995169ADB7C00F05539 /* AppDelegate.m in Sources */,
 				315A26C6169B960E008328F1 /* ListenViewController.m in Sources */,
 				315A26CB169B96F3008328F1 /* ListenListViewController.m in Sources */,
+				314C80F1169BC94B00D27A99 /* CommFunc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

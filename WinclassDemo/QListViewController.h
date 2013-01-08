@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Exam.h"
+#import "CommFunc.h"
 @interface QListViewController : UITableViewController<NSXMLParserDelegate>{
     NSString *sUrl;
     NSMutableArray *array;
