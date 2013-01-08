@@ -2,7 +2,7 @@
 //  Exam.h
 //  WinclassDemo
 //
-//  Created by xuanyin on 13-1-7.
+//  Created by xuanyin on 13-1-7.guodddd
 //  Copyright (c) 2013年 congminghong. All rights reserved.
 //
 
